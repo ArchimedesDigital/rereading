@@ -84,7 +84,7 @@ class StudentResponse(models.Model):
 
     def get_parsed_views(self):
         """
-        Since views are stored as a TextField directly as the JSON representation
+        Since views are stored as a TextFielpd directly as the JSON representation
         of a list of floats, we need to convert this to a Python object in order
         to use it in our analyses.
         """

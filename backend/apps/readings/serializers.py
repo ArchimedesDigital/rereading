@@ -102,6 +102,7 @@ class StorySerializer(serializers.ModelSerializer):
 class AnalysisSerializer(serializers.Serializer):
     """ Serializes analysis class """
     total_view_time = serializers.ReadOnlyField()
+    median_revisits = serializers.ReadOnlyField()
 
     def create(self, validated_data):
         """ We will not create new objects using this serializer """
